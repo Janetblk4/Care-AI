@@ -3,80 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Care AI Website</title>
+    <title>Learn</title> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded&display=swap" />
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+      .material-symbols-rounded {
+        font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24;
+      }
+    </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar__container">
-      <a href="/" id="navbar__logo">CARE AI</a>
-     <div class="navbar__toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-     </div> 
-     <ul class="navbar__menu">
-        <li class="navbar__item">
-            <a href="/" class="navbar__links">Home</a>
-            
-        </li>
-        <li class="navbar__item">
-            <a href="/tech.html" class="navbar__links">Learn</a>
-        </li><li class="navbar__item">
-            <a href="/" class="navbar__links">Chat</a>
-        </li><li class="navbar__btn">
-            <a href="/" class="button">sign up</a>
-        </li>
-     </ul>
-    </div>
-  </nav>
+    <!-- Header greetings -->
+    <header class="header">
+        <h2 class="title"> Hello, there </h2>
+        <h4 class="subtitle"> How can I help you today?</h4>
+        
+        <ul class="suggestion-list">
+            <li class="suggestion">
+                <!-- Changed: Added link to learn.html -->
+                <a href="learn.html"><h4 class="text"> Here to learn about pneumonia.</h4></a>
+                <span class="icon material-symbols-rounded">cast_for_education</span>
+            </li>
+            <li class="suggestion">
+                <!-- Changed: Added link to learn.html -->
+                <a href="learn.html"><h4 class="text"> Here to learn about malaria?</h4></a>
+                <span class="icon material-symbols-rounded">lightbulb</span>
+            </li>
+            <li class="suggestion">
+                <!-- Changed: Added link to chat.html -->
+                <a href="chat.html"><h4 class="text"> Here to check your symptoms?</h4></a>
+                <span class="icon material-symbols-rounded">explore</span> 
+            </li>
+        </ul>
+    </header> 
 
-  <div class="main">
-    <div class="main__container">
-      <div class="main__content">
-        <h1>CARE AI</h1>
-        <H2>YOUR ASSISTANT</H2>
-        <P>Strive to educate and enlighten</P>
-        <button class="main__btn"><a href="/"></a>get started</button>
-      </div>
-      <div class="main_img--container">
-        <img src="images/pic1.svg" alt="pic" id="main__img">
-      </div>
+     <!-- Chat list container -->
+    <div class="chat-list">
+        <div class="message outgoing">
+            <div class="message-content">
+                <img src="images/pfp2.webp" alt="User image" class="avatar">
+                <p class="text"> This is what it should say </p>
+            </div>
+        </div>
+        <div class="message incoming">
+            <div class="message-content">
+                <img src="images/pfp.jpeg" alt="Care AI image" class="avatar">
+                <p class="text"> This is what it should say </p>
+                <span class="icon material-symbols-rounded">content_copy</span> 
+            </div>
+        </div>
+        <div class="message incoming loading">
+            <div class="message-content">
+                <img src="images/pfp.jpeg" alt="Care AI image" class="avatar">
+                <p class="text"> This is what it should say </p>
+                <div class="loading-indicator">
+                    <div class="loading-bar">
+                        <div class="loading-bar">
+                            <div class="loading-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <span class="icon material-symbols-rounded">content_copy</span> 
+            </div>
+        </div>
     </div>
-  </div>
 
- 
-  <div class="services">
-    <h1>Real-time health advice on malaria, pneumonia & diarrheal diseases.</h1>
-    <div class="services__container">
-     <div class="services__card">
-      <h2>Here to learn?</h2>
-      <p>Malaria, pneumonia & diarrheal diseases.</p>
-      <button>Get started</button>
-     </div>
-     <div class="services__card">
-      <h2>Here to Chat?</h2>
-      <p>inquire about symptoms.</p>
-      <button>Chat</button>
-     </div>
+      <!-- Typing area -->
+    <div class="typing-area">
+        <form action="#" class="typing-form">
+            <div class="input-wrapper">
+                <input type="text" placeholder="Enter prompt here" class="typing-input" required>
+                <button type="submit" class="icon material-symbols-rounded">send</button>
+            </div>
+            <div class="action-buttons">
+                <span class="icon material-symbols-rounded">delete</span>
+                <span class="icon material-symbols-rounded">light_mode</span>
+            </div>
+        </form>
+        <p class="disclaimer-text"> Care AI is only for educational and
+            informative purposes. Please seek medical help for official guidance.
+        </p>
     </div>
-  </div>
+    
+    <!-- Footer links to other pages -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <!-- Changed: Adjusted footer link to direct to chat.html -->
+                    <a href="chat.html">Contact Us</a>
+                    <a href="/">Email</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <div class="footer__container">
-    <div class="fotter__links">
-     <div class="footer__link--wrapper">
-      <div class="footer__link--items">
-        <h2>About Us</h2>
-        <a href="/">Contact Us</a>
-        <a href="/">email</a>
-        <a href="/">Terms of service</a>
-      </div>
-     </div> 
-    </div>
-  </div>
-  <script src="app.js"></script>
 </body>
 </html>
